@@ -5,6 +5,19 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebAppExample", "MyWebAppExample\MyWebAppExample.csproj", "{0111270F-226B-47BB-BC73-C1D6B174084D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{04D98473-785C-4ECA-A6E5-FC6102CE5653}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{C8F17893-E2D4-426A-9989-EFCC1928DC96}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{465805A7-641D-42C1-A281-92FC1AFB6291}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\MyWebAppExample.json = PublishScripts\Templates\MyWebAppExample.json
+		PublishScripts\Templates\MyWebAppExample.param.dev.json = PublishScripts\Templates\MyWebAppExample.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8F17893-E2D4-426A-9989-EFCC1928DC96} = {04D98473-785C-4ECA-A6E5-FC6102CE5653}
+		{465805A7-641D-42C1-A281-92FC1AFB6291} = {04D98473-785C-4ECA-A6E5-FC6102CE5653}
 	EndGlobalSection
 EndGlobal
